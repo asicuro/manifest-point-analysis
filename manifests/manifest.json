@@ -1,0 +1,56 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://example.org/iiif/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "Masaccio – Annotazione puntuale",
+  "sequences": [
+    {
+      "@id": "https://example.org/iiif/sequence/normal",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://example.org/iiif/canvas/1",
+          "@type": "sc:Canvas",
+          "label": "Masaccio – Trinità",
+          "width": 3024,
+          "height": 3885,
+          "images": [
+            {
+              "@id": "https://example.org/iiif/annotation/image/1",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://raw.githubusercontent.com/asicuro/manifest-point-analysis/refs/heads/main/images/masaccio/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 3885,
+                "width": 3024
+              },
+              "on": "https://example.org/iiif/canvas/1"
+            }
+          ],
+          "otherContent": [
+            {
+              "@type": "sc:AnnotationList",
+              "@id": "https://example.org/iiif/annotations/page1-inline",
+              "resources": [
+                {
+                  "@id": "https://example.org/iiif/annotation/comment/1",
+                  "@type": "oa:Annotation",
+                  "motivation": "commenting",
+                  "resource": {
+                    "@type": "dctypes:Text",
+                    "format": "text/plain",
+                    "language": "it",
+                    "value": "Dettaglio: volto del Cristo"
+                  },
+                  "on": "https://example.org/iiif/canvas/1#xywh=1500,900,1,1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
