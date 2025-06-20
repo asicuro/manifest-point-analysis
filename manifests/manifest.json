@@ -1,42 +1,77 @@
 {
-  "@context": "http://iiif.io/api/presentation/3/context.json",
-  "@id": "https://example.org/iiif/manifest.json",
-  "@type": "sc:Manifest",
-  "label": "Masaccio – Annotazione puntuale",
-  "sequences": [
+  "id": "https://example.org/iiif/manifest.json",
+  "type": "Manifest",
+  "label": { "en": [ "Masaccio – Annotazione puntuale" ] },
+  "items": [
     {
-      "@id": "https://example.org/iiif/sequence/normal",
-      "@type": "sc:Sequence",
-      "canvases": [
+      "id": "https://example.org/iiif/canvas/1",
+      "type": "Canvas",
+      "width": 3024,
+      "height": 3885,
+      "label": { "en": [ "Masaccio – Trinità" ] },
+      "items": [
         {
-          "@id": "https://example.org/iiif/canvas/1",
-          "@type": "sc:Canvas",
-          "label": "Masaccio – Trinità",
-          "width": 3024,
-          "height": 3885,
-          "images": [
+          "id": "https://example.org/iiif/page/1/painting",
+          "type": "AnnotationPage",
+          "items": [
             {
-              "@id": "https://example.org/iiif/annotation/image/1",
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://raw.githubusercontent.com/asicuro/manifest-point-analysis/refs/heads/main/images/masaccio/full/full/0/default.jpg",
-                "@type": "dctypes:Image",
+              "id": "https://example.org/iiif/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://raw.githubusercontent.com/asicuro/manifest-point-analysis/refs/heads/main/images/masaccio/full/full/0/default.jpg",
+                "type": "Image",
                 "format": "image/jpeg",
-                "height": 3885,
-                "width": 3024
+                "width": 3024,
+                "height": 3885
               },
-              "on": "https://example.org/iiif/canvas/1"
+              "target": "https://example.org/iiif/canvas/1"
             }
-          ],
-          "otherContent": [
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://example.org/iiif/page/1/annotations",
+          "type": "AnnotationPage",
+          "items": [
             {
-              "@id": "https://raw.githubusercontent.com/asicuro/manifest-point-analysis/refs/heads/main/annotations/page1.json",
-              "@type": "sc:AnnotationList"
+              "id": "https://example.org/iiif/annotation/comment/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": [
+                {
+                  "type": "TextualBody",
+                  "value": "Zn-based retouch\nLead and chromium showing up in the XRF spot/map analysis",
+                  "purpose": "commenting",
+                  "format": "text/plain"
+                },
+                {
+                  "type": "TextualBody",
+                  "value": "Point ID: 538",
+                  "purpose": "describing",
+                  "format": "text/plain"
+                },
+                {
+                  "type": "TextualBody",
+                  "value": "Color: #afff38",
+                  "purpose": "describing",
+                  "format": "text/plain"
+                }
+              ],
+              "target": {
+                "source": "https://example.org/iiif/canvas/1",
+                "selector": {
+                  "type": "FragmentSelector",
+                  "conformsTo": "http://www.w3.org/TR/media-frags/",
+                  "value": "xywh=1490,890,20,20"
+                }
+              }
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "context": "http://iiif.io/api/presentation/3/context.json"
 }
