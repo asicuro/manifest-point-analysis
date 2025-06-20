@@ -1,5 +1,5 @@
 {
-  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@context": "http://iiif.io/api/presentation/3/context.json",
   "@id": "https://example.org/iiif/manifest.json",
   "@type": "sc:Manifest",
   "label": "Masaccio – Annotazione puntuale",
