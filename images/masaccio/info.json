@@ -1,0 +1,32 @@
+{
+  "tiles" : [ {
+    "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+    "width" : 1024,
+    "height" : 1024
+  } ],
+  "protocol" : "http://iiif.io/api/image",
+  "sizes" : [ {
+    "width" : 63,
+    "height" : 113
+  }, {
+    "width" : 125,
+    "height" : 225
+  }, {
+    "width" : 249,
+    "height" : 449
+  }, {
+    "width" : 498,
+    "height" : 898
+  }, {
+    "width" : 995,
+    "height" : 1795
+  }, {
+    "width" : 1989,
+    "height" : 3589
+  } ],
+  "profile" : "http://iiif.io/api/image/2/level0.json",
+  "width" : 1989,
+  "@id" : "https://asicuro.github.io/manifest-point-analysis/images/masaccio",
+  "@context" : "http://iiif.io/api/image/2/context.json",
+  "height" : 3589
+}

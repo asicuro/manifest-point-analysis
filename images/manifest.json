@@ -7,5 +7,87 @@
             "All images loaded in asicuro/manifest-point-analysis project"
         ]
     },
-    "items": []
+    "items": [
+        {
+            "id": "https://asicuro.github.io/manifest-point-analysis/images/masaccio/canvas/",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "masaccio"
+                ]
+            },
+            "height": 3589,
+            "width": 1989,
+            "items": [
+                {
+                    "id": "https://asicuro.github.io/manifest-point-analysis/images/masaccio/annotation/AnnoPage",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://asicuro.github.io/manifest-point-analysis/images/masaccio/annotation/",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://asicuro.github.io/manifest-point-analysis/images/masaccio/full/full/0/default.jpg",
+                                "type": "Image",
+                                "service": [
+                                    {
+                                        "tiles": [
+                                            {
+                                                "scaleFactors": [
+                                                    32,
+                                                    16,
+                                                    8,
+                                                    4,
+                                                    2,
+                                                    1
+                                                ],
+                                                "width": 1024,
+                                                "height": 1024
+                                            }
+                                        ],
+                                        "protocol": "http://iiif.io/api/image",
+                                        "sizes": [
+                                            {
+                                                "width": 63,
+                                                "height": 113
+                                            },
+                                            {
+                                                "width": 125,
+                                                "height": 225
+                                            },
+                                            {
+                                                "width": 249,
+                                                "height": 449
+                                            },
+                                            {
+                                                "width": 498,
+                                                "height": 898
+                                            },
+                                            {
+                                                "width": 995,
+                                                "height": 1795
+                                            },
+                                            {
+                                                "width": 1989,
+                                                "height": 3589
+                                            }
+                                        ],
+                                        "profile": "http://iiif.io/api/image/2/level0.json",
+                                        "width": 1989,
+                                        "@id": "https://asicuro.github.io/manifest-point-analysis/images/masaccio",
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "height": 3589,
+                                        "@type": "ImageService2"
+                                    }
+                                ],
+                                "format": "image/jpeg"
+                            },
+                            "target": "https://asicuro.github.io/manifest-point-analysis/images/masaccio/canvas/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
