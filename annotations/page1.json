@@ -11,9 +11,10 @@
         "@type": "dctypes:Text",
         "format": "text/plain",
         "language": "it",
+        "label": "Dettaglio iconografico della figura centrale",
         "value": "Dettaglio: volto del Cristo"
       },
-      "on": "https://example.org/iiif/canvas/1#xywh=1500,900,20,20"
+      "on": "https://example.org/iiif/canvas/1#xywh=1500,900,40,40"
     }
   ]
 }
