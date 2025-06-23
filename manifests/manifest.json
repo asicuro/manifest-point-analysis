@@ -43,7 +43,7 @@
               "body": [
                 {
                    "type": "TextualBody",
-                  "value": "<b>Zn-based retouch</b><br>Lead and chromium showing up in the XRF spot/map analysis",
+                  "value": "<b>Microscopy point</b><br>Here a first microscopy point<br/>",
                   "purpose": "commenting",
                   "format": "text/html"
                 },
@@ -52,6 +52,44 @@
                   "value": "<img src='https://m.media-amazon.com/images/I/61jQnaah+kL.png' width='150'/>",
                   "format": "text/html",
                   "purpose": "commenting"
+                },                
+                {
+                  "type": "TextualBody",
+                  "value": "<br/>Color: #ff0000",
+                  "purpose": "describing",
+                  "format": "text/html"
+                }
+              ],
+              "target": {
+                "source": "https://example.org/iiif/canvas/1",
+                "selector": {
+                  "type": "SvgSelector",
+                  "value": "<svg xmlns='http://www.w3.org/2000/svg'><circle cx='1500' cy='900' r='10' fill='#ff0000' stroke='#000000' stroke-width='2'/></svg>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://example.org/iiif/page/2/annotations",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/iiif/annotation/comment/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": [
+                {
+                  "type": "TextualBody",
+                  "value": "<b>Second microscopy point</b><br>Here the second microscopy point",
+                  "purpose": "commenting",
+                  "format": "text/html"
+                },
+                {
+                  "type": "Image",
+				  "id": "https://i.pinimg.com/736x/a5/96/a0/a596a01c826cf4ea556821c5eeb26729.jpg",
+				  "format": "image/jpeg",
+				  "purpose": "illustrating"
                 },                
                 {
                   "type": "TextualBody",
@@ -67,9 +105,22 @@
                   "value": "<svg xmlns='http://www.w3.org/2000/svg'><circle cx='1500' cy='900' r='10' fill='#ff0000' stroke='#000000' stroke-width='2'/></svg>"
                 }
               }
-            }
+            },
+			{
+			  "id": "https://example.org/iiif/annotation/comment/2",
+			  "type": "Annotation",
+              "motivation": "commenting",
+              "body": [
+                {
+                  "type": "TextualBody",
+                  "value": "<b>Results</b><br>Here the results",
+                  "purpose": "commenting",
+                  "format": "text/html"
+                }
+				]				
+			}
           ]
-        }
+        }		
       ]
     }
   ]
