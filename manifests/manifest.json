@@ -1,5 +1,5 @@
 {
-  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "context": "http://iiif.io/api/presentation/3/context.json",
   "id": "https://example.org/iiif/manifest/masaccio-colored-pin",
   "type": "Manifest",
   "label": { "en": ["Masaccio – Annotazione con Pin Rosso"] },
