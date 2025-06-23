@@ -48,10 +48,10 @@
                   "format": "text/html"
                 },
                 {
-                  "type": "TextualBody",
-                  "value": "{\"pointId\":538,\"element\":\"Pb\",\"intensity\":56.3,\"units\":\"%\"}",
-                  "purpose": "describing",
-                  "format": "application/json"
+                  "type": "Image",
+                  "id": "https://www.hallofseries.com/wp-content/uploads/2023/08/The-Big-Bang-Theory4-930x620.webp",
+                  "format": "image/jpeg",
+                  "purpose": "illustrating"
                 },
                 {
                   "type": "TextualBody",
