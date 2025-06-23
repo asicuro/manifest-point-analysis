@@ -42,16 +42,16 @@
               "motivation": "commenting",
               "body": [
                 {
-                  "type": "TextualBody",
-                  "value": "Zn-based retouch\nLead and chromium showing up in the XRF spot/map analysis",
+                   "type": "TextualBody",
+                  "value": "<b>Zn-based retouch</b><br>Lead and chromium showing up in the XRF spot/map analysis",
                   "purpose": "commenting",
-                  "format": "text/plain"
+                  "format": "text/html"
                 },
                 {
                   "type": "TextualBody",
-                  "value": "Point ID: 538",
+                  "value": "{\"pointId\":538,\"element\":\"Pb\",\"intensity\":56.3,\"units\":\"%\"}",
                   "purpose": "describing",
-                  "format": "text/plain"
+                  "format": "application/json"
                 },
                 {
                   "type": "TextualBody",
