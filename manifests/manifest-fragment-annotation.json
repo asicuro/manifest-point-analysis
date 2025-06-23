@@ -1,0 +1,5 @@
+"selector": {Add commentMore actions
+                  "type": "FragmentSelector",
+                  "conformsTo": "http://www.w3.org/TR/media-frags/",
+                  "value": "xywh=1490,890,20,20"
+                }
